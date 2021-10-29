@@ -1,0 +1,223 @@
+@import "config";
+
+// CUSTOM USER STYLES & IMPORTS
+
+.container {
+  max-width: 470px;
+  margin: auto;
+  position: relative;
+}
+
+html {
+  min-height: 100%;
+  :active,
+  :hover,
+  :focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+}
+input {
+  outline: none;
+}
+body {
+  min-height: 100%;
+  height: 100%;
+
+  // background: #304ff3;
+  // background: -webkit-linear-gradient(top left, #304ff3, #a6eb4e);
+  // background: -moz-linear-gradient(top left, #304ff3, #a6eb4e);
+  // background: linear-gradient(to bottom right, #304ff3, #a6eb4e);
+  background-image: url(../images/389373.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+  padding: 10px 28px;
+  font-weight: normal;
+}
+
+input {
+  background: white;
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 0.5px;
+  padding-left: 25px;
+  border: 3px solid gray;
+  color: gray;
+}
+
+input:focus {
+  background: #edf1f5;
+  border: 3px solid #86a8e7;
+  outline: none;
+  color: #86a8e7;
+}
+
+span.todo-trash {
+  margin-right: 10px;
+  text-align: center;
+  height: 50px;
+  width: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s linear;
+}
+
+i {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: #336dd8;
+  border: 2px solid #86a8e7;
+}
+
+.todos {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li {
+    padding: 0 8px;
+    font-family: "Montserrat";
+  }
+}
+
+.todos li {
+  background: #f7f7f7;
+  height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.todos li:nth-child(2n) {
+  background: #86a8e750;
+}
+i {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+.todos li:hover span.todo-trash {
+  width: 50px;
+  margin-left: 5px;
+}
+.todos li:hover i {
+  -webkit-transform: rotate(80deg);
+  transform: rotate(80deg);
+}
+
+.display {
+  display: none;
+  transition: 0.3s linear;
+}
+
+.checked {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.fa-times {
+  color: red;
+}
+.todo-label {
+  background: #100973;
+  background: -webkit-linear-gradient(top, #100973, #7a72d8);
+  background: -moz-linear-gradient(top, #100973, #7a72d8);
+  background: linear-gradient(to bottom, #100973, #7a72d8);
+}
+.todo-label h1 {
+  text-align: center;
+  font-family: "Comfortaa";
+}
+
+.fa-clipboard-list {
+  font-size: 1.3em;
+  float: right;
+}
+
+.placeholderadd {
+  font-family: "Montserrat-bold";
+  &placeholder {
+    opacity: 0.3;
+  }
+}
+input::placeholder {
+  opacity: 0.3;
+}
+
+.d-flex {
+  display: flex;
+  
+ 
+  justify-content: stretch;
+  
+}
+.buttons {
+  text-align: center;
+  margin: 2px 4px;
+  position: fixed;
+  
+  
+ 
+  button {
+    border-radius: 50%;
+  }
+}
+.cover-buttons{
+  position: relative;
+}
+.btn-group {
+  background-color: #336dd8;
+  border: 2px solid #86a8e7;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 38px;
+  border-radius: 4px;
+  font-family: "Montserrat";
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: 5px;
+  margin-left: 20px;
+  
+  
+ 
+}
+
+#todo {
+//  margin: 0 auto;
+  box-shadow: 0 0 1em black;
+  //max-width: 400px;
+  height: 100%;
+  background: white;
+  margin-top: 30px;
+  border: solid 1px white;
+ 
+}
+
+/*
+Красивый фон
+background: #304FF3;
+background: -webkit-linear-gradient(top left, #304FF3, #A6EB4E);
+background: -moz-linear-gradient(top left, #304FF3, #A6EB4E);
+background: linear-gradient(to bottom right, #304FF3, #A6EB4E);
+*/
+
+/*
+disko club
+background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+*/
